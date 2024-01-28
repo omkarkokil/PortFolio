@@ -1,8 +1,13 @@
+import Navbar from "@/components/custom/Navbar";
+import { ThemeProvider } from "@/provider/ThemeProvider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Rubik_Doodle_Shadow } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+export const Primary_Font = Rubik_Doodle_Shadow({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar font={Primary_Font} />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
