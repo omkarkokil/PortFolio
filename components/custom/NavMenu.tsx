@@ -53,7 +53,10 @@ const NavMenu = () => {
         </DropdownMenuItem>
         <DropdownMenuSeparator className="md:hidden block" />
         <DropdownMenuItem className="md:hidden block">
-          <Link className="flex items-center gap-2" href={"#contact"}>
+          <Link
+            className="flex items-center gap-2"
+            href={"https://github.com/omkarkokil"}
+          >
             <LuGithub className="mr-2 h-4 w-4" />
             <span>Github</span>
           </Link>
@@ -61,7 +64,7 @@ const NavMenu = () => {
         <DropdownMenuItem className="md:hidden block">
           <Link
             className=" md:hidden flex items-center gap-2"
-            href={"#contact"}
+            href={"https://www.linkedin.com/in/omkar-kokil-384231285/"}
           >
             <FaLinkedinIn className="mr-2 h-4 w-4" />
             <span>Linked In</span>

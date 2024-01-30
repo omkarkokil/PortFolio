@@ -6,7 +6,7 @@ const Hero = () => {
   const images = [
     "/HTML.svg",
     "/CSS.svg",
-    "/javascript.svg",
+    "/Javascript.svg",
     "/type.svg",
     "/react.svg",
     "/node.svg",
