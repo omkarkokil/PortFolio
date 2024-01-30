@@ -15,6 +15,9 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        'custom': {
+          'raw': '((max-width: 995px) and (max-height: 700px))'
+        }
       },
     },
     extend: {

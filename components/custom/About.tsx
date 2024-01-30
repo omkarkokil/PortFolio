@@ -1,19 +1,19 @@
-import { NextFont } from "next/dist/compiled/@next/font";
+import { Primary_Font } from "@/app/layout";
 import Image from "next/image";
 import Link from "next/link";
 
-const About = ({ font }: { font: NextFont }) => {
+const About = () => {
   return (
-    <div className="mb-44 flex justify-center flex-col">
+    <div id="about" className="mb-44 flex justify-center flex-col">
       <h1
-        className={`${font.className} text-2xl   font-bold text-center mb-10`}
+        className={`${Primary_Font.className} text-2xl   font-bold text-center mb-10`}
       >
         About Me
       </h1>
-      <section className="flex   justify-center gap-10">
+      <section className="flex md:flex-row flex-col md:items-start items-center   justify-center gap-10">
         <article>
           <Image
-            className="rounded-sm"
+            className="rounded-sm !w-[320px] xs:!w-[350px] sm:!w-[400px]"
             src="/about.jpg"
             height={400}
             width={400}
@@ -21,7 +21,7 @@ const About = ({ font }: { font: NextFont }) => {
           />
         </article>
 
-        <article className="w-[30%] space-y-4">
+        <article className="md:w-[30%] sm:w-[60%] w-[85%] space-y-4">
           <h1 className="text-xl font-bold">
             I'm thrilled to share a bit about my academic journey and my passion
             for technology.
@@ -35,7 +35,7 @@ const About = ({ font }: { font: NextFont }) => {
               Shivaji University
             </Link>
             , and it feels like a major milestone in my educational adventure.
-            Currently, I'm knee-deep in my Master's program at{" "}
+            Currently, I'm persuing my Master's program at{" "}
             <Link
               href={"https://www.aesimr.org/"}
               className="dark:text-black text-white font-bold bg-black rounded-sm p-1 text-xs dark:bg-white"

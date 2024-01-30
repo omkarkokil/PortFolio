@@ -7,8 +7,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Home } from "lucide-react";
+import Link from "next/link";
+import { FaLinkedinIn } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosContact } from "react-icons/io";
+import { LuGithub } from "react-icons/lu";
 import { PiProjectorScreenChart } from "react-icons/pi";
 import { TbListDetails } from "react-icons/tb";
 
@@ -25,59 +28,47 @@ const NavMenu = () => {
         <DropdownMenuLabel>Menu </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="pr-40">
-          <Home className="mr-2 h-4 w-4" />
-          <span>Home</span>
+          <Link className="flex items-center gap-2" href={"#start"}>
+            <Home className="mr-2 h-4 w-4" />
+            <span>Home</span>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem className="pr-20">
-          <TbListDetails className="mr-2 h-4 w-4" />
-          <span>About</span>
+          <Link className="flex items-center gap-2" href={"#about"}>
+            <TbListDetails className="mr-2 h-4 w-4" />
+            <span>About</span>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <PiProjectorScreenChart className="mr-2 h-4 w-4" />
-          <span>Project</span>
+          <Link className="flex items-center gap-2" href={"#project"}>
+            <PiProjectorScreenChart className="mr-2 h-4 w-4" />
+            <span>Project</span>
+          </Link>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <IoIosContact className="mr-2 h-4 w-4" />
-          <span>Contact us</span>
+          <Link className="flex items-center gap-2" href={"#contact"}>
+            <IoIosContact className="mr-2 h-4 w-4" />
+            <span>Contact us</span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator className="md:hidden block" />
+        <DropdownMenuItem className="md:hidden block">
+          <Link className="flex items-center gap-2" href={"#contact"}>
+            <LuGithub className="mr-2 h-4 w-4" />
+            <span>Github</span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem className="md:hidden block">
+          <Link
+            className=" md:hidden flex items-center gap-2"
+            href={"#contact"}
+          >
+            <FaLinkedinIn className="mr-2 h-4 w-4" />
+            <span>Linked In</span>
+          </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-
-    // <DropdownMenu>
-    //   <DropdownMenuTrigger asChild>
-    //     <HiMenuAlt3 className="hover:text-gray-400" size={20} />
-    //   </DropdownMenuTrigger>
-    //   <DropdownMenuContent className="w-56 dark:!bg-white">
-    //     <DropdownMenuLabel>My Account</DropdownMenuLabel>
-    //     <DropdownMenuSeparator />
-    //     <DropdownMenuGroup>
-    //       <DropdownMenuItem>
-    //         <User className="mr-2 h-4 w-4" />
-    //         <span>Profile</span>
-    //         <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-    //       </DropdownMenuItem>
-    //     </DropdownMenuGroup>
-    //     <DropdownMenuSeparator />
-    //     <DropdownMenuItem>
-    //       <Github className="mr-2 h-4 w-4" />
-    //       <span>GitHub</span>
-    //     </DropdownMenuItem>
-    //     <DropdownMenuItem>
-    //       <LifeBuoy className="mr-2 h-4 w-4" />
-    //       <span>Support</span>
-    //     </DropdownMenuItem>
-    //     <DropdownMenuItem disabled>
-    //       <Cloud className="mr-2 h-4 w-4" />
-    //       <span>API</span>
-    //     </DropdownMenuItem>
-    //     <DropdownMenuSeparator />
-    //     <DropdownMenuItem>
-    //       <LogOut className="mr-2 h-4 w-4" />
-    //       <span>Log out</span>
-    //       <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-    //     </DropdownMenuItem>
-    //   </DropdownMenuContent>
-    // </DropdownMenu>
   );
 };
 

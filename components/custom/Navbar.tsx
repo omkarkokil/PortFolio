@@ -12,9 +12,9 @@ import NavMenu from "./NavMenu";
 const Navbar = ({ font }: { font: NextFont }) => {
   const { setTheme } = useTheme();
   return (
-    <nav className=" dark:bg-[#020817] bg-white flex fixed top-0 left-0 right-0 h-max items-center justify-center py-6 p-8">
+    <nav className=" dark:bg-[#020817] bg-white flex fixed top-0 left-0 right-0 h-max items-center justify-center md:py-6 sm:py-4 py-2    px-8">
       <div className="lg:w-[60%] md:w-[70%] w-[90%] flex h-max items-center justify-between">
-        <Button variant="link">
+        <Button className="!p-0" variant="link">
           <Sun
             size={20}
             onClick={() => setTheme("dark")}
@@ -36,11 +36,14 @@ const Navbar = ({ font }: { font: NextFont }) => {
         </Link>
 
         <div className="flex gap-x-8 items-center">
-          <Link href={"https://github.com/omkarkokil"}>
+          <Link
+            className="md:flex hidden"
+            href={"https://github.com/omkarkokil"}
+          >
             <FaGithub className="hover:text-gray-400" size={20} />
           </Link>
           <Link
-            className="hover:text-gray-400"
+            className="hover:text-gray-400 md:flex hidden"
             href={"https://www.linkedin.com/in/omkar-kokil-384231285/"}
           >
             <FaLinkedin size={20} />

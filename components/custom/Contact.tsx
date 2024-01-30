@@ -8,25 +8,26 @@ import { Textarea } from "../ui/textarea";
 
 const Contact = () => {
   return (
-    <div className="my-44 flex justify-center flex-col">
+    <div id="project" className="my-44 flex justify-center flex-col">
       <h1
+        id="contact"
         className={`${Primary_Font.className} text-2xl   font-bold text-center mb-10`}
       >
         Contact Me
       </h1>
       <section className="flex  justify-center gap-10">
-        <div className="flex gap-3  flex-col">
+        <div className="sm:flex hidden  gap-3  flex-col">
           <h1>My email</h1>
-          <div className="flex dark:bg-white dark:text-black bg-slate-100 text-black p-6 rounded-md  items-center gap-2 ">
+          <div className="flex dark:bg-[#1e293b] dark:text-white bg-slate-100 text-black p-6 rounded-md  items-center gap-2 ">
             <MdEmail size={22} /> roleplay56p@gmail.com
           </div>
           <h1 className="">My Location</h1>
-          <div className="flex dark:bg-white dark:text-black bg-slate-100 text-black  p-6 rounded-md  items-center gap-2 ">
+          <div className="flex dark:bg-[#1e293b] dark:text-white bg-slate-100 text-black  p-6 rounded-md  items-center gap-2 ">
             <FaLocationDot size={22} /> 412802 satara maharashtra , India
           </div>
         </div>
 
-        <form className="w-[30%] space-y-4">
+        <form className="md:w-[30%] sm:w-[70%] w-[85%] space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name">Enter your name</Label>
             <Input type="name" id="name" placeholder="name" />
