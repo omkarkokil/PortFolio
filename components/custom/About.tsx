@@ -23,28 +23,28 @@ const About = () => {
 
         <article className="md:w-[30%] sm:w-[60%] w-[85%] space-y-4">
           <h1 className="text-xl font-bold">
-            I'm thrilled to share a bit about my academic journey and my passion
-            for technology.
+            I am thrilled to share a bit about my academic journey and my
+            passion for technology.
           </h1>
           <p className="dark:text-neutral-400 text-neutral-700 font-semibold text-sm leading-6 ">
-            I recently graduated from{" "}
+            I recently graduated from
             <Link
               href={"http://ssgmkhandala.org/"}
               className="dark:text-black text-white font-bold bg-black rounded-sm p-1 text-xs dark:bg-white"
             >
               Shivaji University
-            </Link>
-            , and it feels like a major milestone in my educational adventure.
-            Currently, I'm persuing my Master's program at{" "}
+            </Link>{" "}
+            and it feels like a major milestone in my educational adventure.
+            Currently, I am persuing my Masters program at{" "}
             <Link
               href={"https://www.aesimr.org/"}
               className="dark:text-black text-white font-bold bg-black rounded-sm p-1 text-xs dark:bg-white"
             >
               Abhinav College , Narhe
             </Link>
-            , affiliated with Pune University. <br /> The learning never stops,
-            and I'm soaking it all in! What really gets me excited is the world
-            of web development, and I'm all about Next.js, React.js, and the
+            affiliated with Pune University. <br /> The learning never stops,
+            and I am soaking it all in! What really gets me excited is the world
+            of web development, and I am all about Next.js, React.js, and the
             whole MERN tech stack (MongoDB, Express.js, React, Node.js).
           </p>
         </article>
