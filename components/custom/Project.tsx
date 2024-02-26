@@ -8,14 +8,6 @@ import { Button } from "../ui/button";
 const Project = () => {
   const data = [
     {
-      image: "/blog.png",
-      title: "Create blogs and read along with Magicalwinds blog app",
-      desc: "MagicalWind Blog is a captivating online platform where user can add their blogs and gain some knowledge",
-      stack: ["React", "Nodejs", "Mongodb"],
-      live: "https://magicalwind.onrender.com/",
-      code: "https://github.com/omkarkokil/BLogAppV2",
-    },
-    {
       image: "/ecom.png",
       title: "ONESTOPSHOP is an online  platform for online product sales",
       desc: "ONESTOPSHOP is a online platform to buy and sell product it has an admin dashboard which is used to add product and handle admin task also to test use demo login button to get admin credentials and after it press login",
@@ -30,6 +22,15 @@ const Project = () => {
       stack: ["Next", "Tailwind", "Prism ORM"],
       live: "https://thunder-chat-navy.vercel.app/",
       code: "https://github.com/omkarkokil/thunder-chat",
+    },
+
+    {
+      image: "/blog.png",
+      title: "Create blogs and read along with Magicalwinds blog app",
+      desc: "MagicalWind Blog is a captivating online platform where user can add their blogs and gain some knowledge",
+      stack: ["React", "Nodejs", "Mongodb"],
+      live: "https://magicalwind.onrender.com/",
+      code: "https://github.com/omkarkokil/BLogAppV2",
     },
   ];
 
