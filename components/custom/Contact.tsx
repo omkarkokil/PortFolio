@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="sm:flex hidden  gap-3  flex-col">
           <h1>My email</h1>
           <div className="flex dark:bg-[#1e293b] dark:text-white bg-slate-100 text-black p-6 rounded-md  items-center gap-2 ">
-            <MdEmail size={22} /> roleplay56p@gmail.com
+            <MdEmail size={22} /> omkarkokil2709@gmail.com
           </div>
           <h1 className="">My Location</h1>
           <div className="flex dark:bg-[#1e293b] dark:text-white bg-slate-100 text-black  p-6 rounded-md  items-center gap-2 ">

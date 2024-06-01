@@ -18,7 +18,7 @@ const Project = () => {
     {
       image: "/thunderchat.png",
       title: "Thunder chat a way communicate to  your love ones",
-      desc: "I recently graduated from <b>Shivaji University</b> , and it feels like a major milestone in my educational adventure. Currently, I'm knee-deep in my Master's program at <b>Abhinav College</b>, Narhe",
+      desc: "This project is a chat application where user can chat with their friends and family members. It is a real time chat application which is done with pusherjs.",
       stack: ["Next", "Tailwind", "Prism ORM"],
       live: "https://thunder-chat-navy.vercel.app/",
       code: "https://github.com/omkarkokil/thunder-chat",

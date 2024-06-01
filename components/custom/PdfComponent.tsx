@@ -28,10 +28,7 @@ const PdfComponent = () => {
           <DialogHeader>
             <DialogTitle>My resume</DialogTitle>
           </DialogHeader>
-          <div
-          
-            className="scrollt "
-          >
+          <div className="scrollt ">
             <object
               type="application/pdf"
               width="100%"
